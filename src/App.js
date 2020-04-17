@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import SideBarMenu from "./ReusableComponents/SideBarMenu";
 import Sessions from "./Components/Sessions";
+import Menu from './Components/Menu'
 
 export const menuContent = [
   {
@@ -52,7 +52,7 @@ class App extends Component {
     const { list } = this.state;
     return (
       <div className="App">
-        <SideBarMenu content={menuContent} />
+        <Menu />
         <Sessions list={list} />
       </div>
     );
